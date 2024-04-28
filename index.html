@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Arpit Patel Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Arpit Patel</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/profile.png);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hi 👋 !</span>
+								<h1 class="mb-4 mt-3">I'm <span>Arpit Patel</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'Pre-final Year Student'
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>AI and ML Enthusiast</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+								<p><a href="https://www.linkedin.com/in/arpit-patel-b17416229/"
+										class="btn btn-primary py-3 px-4">LinkedIn</a>
+									<a href="https://github.com/arpitpatelsitapur"
+										class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Arpit Patel</span></p>
+											<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
+											<p><span class="title-s">Address: </span> <span>Kanpur, India</span></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>								
+									<button class="btn btn-primary py-2 px-3 mb-2">PYTHON</button> <span
+										class="pull-right">Advanced</span><br>
+									<button class="btn btn-primary py-2 px-3 mb-2">Data Visualization</button> <span
+										class="pull-right">Intermediate</span><br>
+									<button class="btn btn-primary py-2 px-3 mb-2">Machine Learning</button> <span
+										class="pull-right">Intermediate</span><br>
+									<button class="btn btn-primary py-2 px-3 mb-2">PowerBI</button> <span
+										class="pull-right">Intermediate</span><br>
+									<button class="btn btn-primary py-2 px-3 mb-2">SQL</button> <span
+										class="pull-right">Intermediate</span><br>
+									<button class="btn btn-primary py-2 px-3 mb-2">Django Backend</button> <span
+										class="pull-right">Beginner</span><br>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>As a third-year student passionate about AI, I've mastered machine learning and am
+									diving into deep learning. Despite my academic status, I've honed skills in data and
+									statistical analysis, and thrive on leading impactful projects. Eager to innovate,
+									collaborate, and contribute to the AI landscape..</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Machine Learning Enthusiast</span>
+									</li>
+									<li class="d-flex"><span>Domains:</span> <span>Finance, E-commerce, Automotive,
+											Telecommunications,
+											Healthcare</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of technology</span></li>
+									<li class="d-flex"><span>Languages:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI</span></li>
+									<li class="d-flex"><span>Skills:</span> <span>Machine Learning</span></li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="25">0</span> <span>+</span>
+									<span>&nbsp; Machine Learning Projects completed</span>
+								</p>
+								<p><a href="https://github.com/arpitpatelsitapur/ML-projects"
+										class="btn btn-primary py-3 px-3">GitHub Repo</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Experienced Data Analyst with talent for turning data into actionable insights. Skilled in data
+						science, statistical analysis, and machine learning algorithms. Proven track record of driving
+						business strategies through data-driven approaches and effective project management.</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-2025</span>
+						<h2>Bachelor of Technolgy</h2>
+						<span class="position">Guru Ghasidas University, Bilaspur</span>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2020</span>
+						<h2>Class 12 : UP Board</h2>
+						<span class="position">Grade: First class distinction.</span>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<h2>Experience</h2>
+				<div class="underline"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2023 - December 2023</span>
+						<h3>Dashboard Developer</h3>
+						<span class="position">Guru Ghasidas Vishwavidyalaya, Bilaspur</span>
+						<p class="mt-4">Engineered and managed a dynamic Power BI dashboard, driving data-driven
+							decision-making. Collaborated across teams to streamline data integration and optimize
+							dashboard
+							performance. Iteratively improved dashboard features based on user insights and evolving
+							business
+							demands.</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2023 - July 2023</span>
+						<h3>Salesforce Virtual Intern</h3>
+						<span class="position">SFVIP-23 Program</span>
+						<p class="mt-4">Engaged in an intensive internship program focused on mastering Salesforce CRM
+							essentials. Devised and deployed custom Salesforce solutions, amplifying operational
+							efficiency.
+							Contributed to crafting comprehensive documentation and facilitating user training.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June 2023 - November 2023</span>
+						<h3>Backend Developer Intern</h3>
+						<span class="position">Presear Softwares Private Limited</span>
+						<p class="mt-4">Architected robust backend solutions using Django, ensuring scalability and
+							performance. Played a pivotal role in Agile development cycles, collaborating closely with
+							frontend
+							teams. Contributed to shaping database schema design and executing data migration
+							strategies.</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Below are some of my projects showcasing skills in SQL, Python, Power BI, and ML.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+
+				<!-- Project 1 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="http://www.new.ggu.ac.in/dashboard/" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_1.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="http://www.new.ggu.ac.in/dashboard/">University
+									Dashboard</a></h3>
+							<p>Engineered and managed a comprehensive Power BI dashboard for website analytics.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 2 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/arpitpatelsitapur/ML-projects" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_2.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://github.com/arpitpatelsitapur/ML-projects">Machine
+									Learning Projects</a></h3>
+							<p>Completed over 25 ML projects showcasing diverse applications.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://app-multiple-disease-prediction-ml-app-check.streamlit.app/"
+							class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a
+									href="https://app-multiple-disease-prediction-ml-app-check.streamlit.app/">Multiple
+									Disease Prediction ML App</a></h3>
+							<p>Developed an app for disease prediction using ML techniques.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Additional project if needed -->
+			<!-- <div class="row d-flex justify-content-center">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="#" class="block-20 zoom-effect"
+                            style="background-image: url('images/proj_4.jpg');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+                            <h3 class="heading"><a href="#">Project Name</a></h3>
+                            <p>Project description.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github </span> </h2>
+					<div class="heading">
+						<h4> I love to solve problems &amp; uncover hidden data stories. </h4>
+						<br>
+						<p><a href="https://github.com/arpitpatelsitapur" class="btn btn-primary py-3 px-5">GitHub</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
